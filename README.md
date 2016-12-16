@@ -39,6 +39,6 @@ After getting an instance of VerifiedOwner (which is what VerifyOwner({number}).
 
 
 
-This library is licensed under the MIT License. Please take a look at it!
+This library is licensed under the <a href="https://github.com/yusufoguntola/number_verifier/blob/master/LICENSE.txt">MIT License.</a> Please take a look at it!
 
 Enjoy!!!
