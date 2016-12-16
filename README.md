@@ -39,8 +39,8 @@ owner = vo.get_owner()
 model = vo.get_model()
 colour = vo.get_colour()
 chasis_number = vo.get_chasis_number()
-issue_date = vo.get_issue_date()
-expiry_date = vo.get_expiry_date()
+issue_date = vo.get_issue_date() #This returns a python datetime object
+expiry_date = vo.get_expiry_date() #This returns a python datetime object
 ```
 
 
