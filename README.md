@@ -1,41 +1,47 @@
-Nigerian Vehicle Plate Number Verifier
+# Python Plate Number Verifier
+> Nigerian Vehicle Plate Number Verifier
 
 This library enables you verify plate number (of Nigerian vehicles) and get the details
 of the vehicle and the verified owner.
 
+## Installation
 To use, simply install using pip or easy_install:
 
-Type:
-<code>pip install number_verifier</code>
+> Install the requirements first:
 
-or
+```shell
+pip install requests
+pip install python-dateutil
+```
+> And then install number_verifier
 
-<code>easy_install install number_verifier</code>
+```shell
+  pip install number_verifier
+```
 
-Example usage:
-<code>from number_verifier.NumberOwner import VerifyOwner</code>
 
-<code>vo = VerifyOwner("FST918EH").verify()</code>
+## Example usage:
+```python
+from number_verifier.NumberOwner import VerifyOwner
+vo = VerifyOwner("FST918EH").verify()
 
-<code>issue_date = vo.get_issue_date()</code>
+issue_date = vo.get_issue_date()
+```
 
-Available details:
+#Available details:
 After getting an instance of VerifiedOwner (which is what VerifyOwner({number}).verify()) would return, you can do these:
 
-<code>#assuming the object is called 'vo'</code>
-
-<code>owner = vo.get_owner()</code>
-  
-<code>model = vo.get_model()</code>
-  
-<code>colour = vo.get_colour()</code>
-  
-<code>chasis_number = vo.get_chasis_number()</code>
-  
-<code>issue_date = vo.get_issue_date()</code>
-  
-<code>expiry_date = vo.get_expiry_date()</code>
-  
+```python
+#assuming the object is called 'vo'
+from number_verifier.NumberOwner import VerifyOwner
+vo = VerifyOwner("FST918EH").verify()
+owner = vo.get_owner()
+model = vo.get_model()
+colour = vo.get_colour()
+chasis_number = vo.get_chasis_number()
+issue_date = vo.get_issue_date()
+expiry_date = vo.get_expiry_date()
+```
 
 
 
