@@ -15,38 +15,32 @@ class VerifiedOwner:
     def get_owner(self):
         if self.status:
             return self.response.get('owner')
-        else:
-            return "Unknown"
+        return "Unknown"
 
     def get_model(self):
         if self.status:
             return self.response.get('model')
-        else:
-            return "Unknown"
+        return "Unknown"
 
     def get_colour(self):
         if self.status:
             return self.response.get('color')
-        else:
-            return "Unknown"
+        return "Unknown"
 
     def get_chasis_number(self):
         if self.status:
             return self.response.get('chasis')
-        else:
-            return "Unknown"
+        return "Unknown"
 
     def get_issue_date(self):
         if self.status:
             return parser.parse(self.response.get('licenseIssueDate'))
-        else:
-            return "Unknown"
+        return "Unknown"
 
     def get_expiry_date(self):
         if self.status:
             return parser.parse(self.response.get('licenseExpiryDate'))
-        else:
-            return "Unknown"
+        return "Unknown"
 
 
 class VerifyOwner:
@@ -61,11 +55,3 @@ class VerifyOwner:
             return VerifiedOwner(response=response.json())
         except Exception:
             return VerifiedOwner(response={u'status': 404, u'message': u"Plate number details not available"})
-
-
-def verify_owner(number):
-    try:
-        response = requests.get("https://mvrd.herokuapp.com/api/plates/%s" % number)
-        return response.json()
-    except Exception:
-        return {u'status': 404, u'message': u"Plate number details not available"}
