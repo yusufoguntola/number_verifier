@@ -23,20 +23,19 @@ After getting an instance of VerifiedOwner (which is what VerifyOwner({number}).
 
 <code>#assuming the object is called 'vo'</code>
 
-<code>
-  owner = vo.get_owner()
+<code>owner = vo.get_owner()</code>
   
-  model = vo.get_model()
+<code>model = vo.get_model()</code>
   
-  colour = vo.get_colour()
+<code>colour = vo.get_colour()</code>
   
-  chasis_number = vo.get_chasis_number()
+<code>chasis_number = vo.get_chasis_number()</code>
   
-  issue_date = vo.get_issue_date()
+<code>issue_date = vo.get_issue_date()</code>
   
-  expiry_date = vo.get_expiry_date()
+<code>expiry_date = vo.get_expiry_date()</code>
   
-</code>
+
 
 
 This library is licensed under the MIT License. Please take a look at it!
