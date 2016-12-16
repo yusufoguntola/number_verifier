@@ -13,7 +13,7 @@ or
 <code>easy_install install number_verifier</code>
 
 Example usage:
-
+<code>from number_verifier.NumberOwner import VerifyOwner</code>
 <code>vo = VerifyOwner("FST918EH").verify()</code>
 
 <code>issue_date = vo.get_issue_date()</code>
