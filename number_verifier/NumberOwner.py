@@ -69,8 +69,3 @@ def verify_owner(number):
         return response.json()
     except Exception:
         return {u'status': 404, u'message': u"Plate number details not available"}
-
-
-vo = VerifyOwner("FST918EH").verify()
-print(vo.get_issue_date())
-
