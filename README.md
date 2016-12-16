@@ -1,6 +1,6 @@
 Nigerian Vehicle Plate Number Verifier
 
-This library enables you verify plate number (of Nigerian vehicles) ang get the details
+This library enables you verify plate number (of Nigerian vehicles) and get the details
 of the vehicle and the verified owner.
 
 To use, simply install using pip or easy_install:
